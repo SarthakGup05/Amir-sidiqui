@@ -1,0 +1,118 @@
+/* Masonry Grid Styles */
+/* Masonry Grid Styles */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.my-masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; 
+}
+
+.portfolio-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-wrapper:hover .label {
+  opacity: 1;
+}
+
+.img-zoom img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.1);
+}
+
+/* Filter Tab Styles (Keep them the same) */
+portfolio-tab ul {
+  text-align: center;
+  margin-top: 40px;
+  list-style: none;
+  padding: 10px;
+  font-size: small;
+}
+
+.portfolio-tab ul li {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 20px;  /* Increased padding for better spacing */
+  margin: 15px;  /* Increased margin for better gap */
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #e30b5d;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+
+.portfolio-tab ul li:hover {
+  background-color: #e30b5d;
+  color: #fff;
+}
+
+.portfolio-tab ul .active {
+  background-color: #e30b5d;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-tab ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .portfolio-tab ul li {
+    display: block;
+    margin: 10px 0;
+    max-width: none;
+  }
+
+  .portfolio-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .masonry-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-tabs {
+    flex: 1;
+  }
+
+  .masonry-grid {
+    flex: 2;
+  }
+}

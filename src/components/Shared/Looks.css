@@ -1,0 +1,81 @@
+/* src/OwlCarouselComponent.css */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+} 
+
+.owl-theme .owl-nav [class*='owl-'] {
+  transition: all 0.3s ease;
+  background: #869791;
+  color: #fff;
+  border-radius: 3px;
+  padding: 4px 7px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
+.item img {
+  height: auto;
+   /* Adjust height as needed */
+   width: 400px;
+ 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-category {
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+
+}
